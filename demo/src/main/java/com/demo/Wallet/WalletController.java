@@ -73,8 +73,8 @@ public class WalletController
         return this.walletService.fundTransfer(walletTransferDto.getFromWalletId(),walletTransferDto.getToWalletId(),walletTransferDto.getAmount());
     }
 
-    @Autowired
-    WalletJpaRepository walletJpaRepository;
+    
+    private WalletJpaRepository walletJpaRepository;
     @RequestMapping(value = "wallet/name/{walletName}", method = RequestMethod.GET)
     public List<WalletDto> getAllWalletsHavingName(@PathVariable("walletName") String name)
     {

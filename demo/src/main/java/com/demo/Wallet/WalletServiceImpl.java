@@ -14,8 +14,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class WalletServiceImpl implements WalletService
 {
-    // autowiring walletJpaRepository
-    @Autowired
+   
     private WalletJpaRepository walletJpaRepository;
 
     @Override
